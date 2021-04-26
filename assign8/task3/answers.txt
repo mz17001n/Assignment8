@@ -1,0 +1,11 @@
+1.What instructions evaluate “a>6”?
+Answer: The instructions that evaluate "a>6" are:
+cmpl $6,-4(%ebp)
+jle .L2
+
+2.What happens if we delete the “jmp” instruction?
+Answer: If we delete the "jmp" instruction the else statement will run even if the original condition is met .
+
+3.Can you rewrite the condition with “jg” in place of “jle”? Why or why not?
+Yes you can. All you have to do is change the greater than sign to a less than sign and then move c += 2 to the else and c-= 2 to the if.
+
